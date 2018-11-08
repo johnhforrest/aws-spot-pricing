@@ -1,0 +1,27 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread" : true
+    },
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "no-console": 0,
+    "prefer-template": 0,
+    "max-len": [2, 120, 2, {
+      ignoreUrls: true,
+      ignoreComments: false
+    }],
+    "react/prefer-stateless-function": 0
+  },
+  "globals": {
+    "__DEVSERVER__": true,
+    "__DEVCLIENT__": true
+  }
+}
